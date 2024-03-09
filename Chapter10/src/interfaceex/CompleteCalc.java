@@ -21,5 +21,12 @@ public class CompleteCalc extends Calculator {
 
 	public void showInfo() {
 		System.out.println("Calc 인터페이스를 구현하였습니다.");
+	}
+
+	@Override
+	public void description() {
+		// TODO Auto-generated method stub
+		System.out.println("완벽한 계산기입니다.");
 	};
+
 }

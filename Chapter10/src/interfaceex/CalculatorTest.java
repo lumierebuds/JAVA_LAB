@@ -19,6 +19,11 @@ public class CalculatorTest {
 
 		System.out.println(calc.divide(10, 2));
 		// calc.showInfo();
+		calc.description();
+
+		int[] arr = { 1, 2, 3, 4, 5 };
+		int sum = Calc.total(arr);
+		System.out.println(sum);
 
 	}
 
