@@ -1,6 +1,6 @@
 package collection;
 
-public class Member {
+public class Member implements Comparable<Member> {
 
 	// 회원클래스
 
@@ -51,6 +51,16 @@ public class Member {
 				return false;
 		}
 		return false;
+	}
+
+	// 추가되는 객체를 비교한다.
+	// 중복되면 저장 x
+	@Override
+	public int compareTo(Member member) {
+		// TODO Auto-generated method stub
+
+		return (this.memberName.compareTo(member.memberName));
+
 	}
 
 }
